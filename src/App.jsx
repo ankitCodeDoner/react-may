@@ -10,12 +10,13 @@ import UseCallBackHook from './hooks/UseCallBackHook'
 import UseReducerHook from './hooks/UseReducerHook'
 import MenuList from './pages/MenuList'
 import AddOrEditMenu from './pages/AddOrEditMenu'
+import UseMemoHook from './hooks/UseMemoHook'
 
 const App = () => {
   return (
     <Routes>
       <Route path='/' element={<Layout />} >
-        <Route index element={<Home />} />
+        <Route index element={<UseMemoHook />} />
         <Route path='/about' element={<About />} />
         <Route path='/add-menu/:id?' element={<AddOrEditMenu />} />
         <Route path='/list' element={<MenuList />} />
