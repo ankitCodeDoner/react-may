@@ -8,7 +8,7 @@ const UseCallBackHook = () => {
     const [text, setText] = useState("")
 
     const handleClick = useCallback(() => {
-        console.log("This is my fuction")
+        console.log("Button Clicked")
     }, [])
 
     return (

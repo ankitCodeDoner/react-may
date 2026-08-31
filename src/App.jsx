@@ -16,7 +16,7 @@ const App = () => {
   return (
     <Routes>
       <Route path='/' element={<Layout />} >
-        <Route index element={<UseMemoHook />} />
+        <Route index element={<UseReducerHook />} />
         <Route path='/about' element={<About />} />
         <Route path='/add-menu/:id?' element={<AddOrEditMenu />} />
         <Route path='/list' element={<MenuList />} />

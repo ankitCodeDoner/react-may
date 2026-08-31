@@ -14,7 +14,11 @@ const reducer = (state, action) => {
                 ...state,
                 email: action.payload
             }
-
+        case "SET_LOADING":
+            return {
+                ...state,
+                loading: action.payload
+            }
             break;
 
         default:
@@ -26,7 +30,8 @@ const reducer = (state, action) => {
 
 const initialState = {
     name: "",
-    email: ""
+    email: "",
+    loading: false
 }
 
 

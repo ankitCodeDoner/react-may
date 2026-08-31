@@ -13,10 +13,11 @@ function UseMemoHook() {
 
 
 
-    const filteredProducts = products.filter((product) => {
-        console.log("Filtering...");
-        return product.name.toLowerCase().includes(search.toLowerCase());
-    });
+    const filteredProducts = () => {
+        return products.filter((product) =>
+            product.name.toLowerCase().includes(search.toLowerCase())
+        );
+    }
 
     return (
         <div>
